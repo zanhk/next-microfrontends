@@ -12,7 +12,7 @@
     "build:docs": "turbo run build --filter=docs...",
     "dev": "turbo run dev",
     "start": "turbo run start",
-    "clean": "turbo run clean && rm -rf node_modules",
+    "clean": "turbo run clean && rmdir /s /q node_modules",
     "lint": "turbo run lint",
     "format": "prettier --write .",
     "changeset": "changeset",
@@ -20,10 +20,10 @@
     "release": "turbo run build --filter=main... && changeset publish"
   },
   "devDependencies": {
-    "@changesets/cli": "^2.26.1",
-    "@types/node": "^18.16.16",
-    "prettier": "^2.8.8",
-    "turbo": "^1.10.1"
+    "@changesets/cli": "^2.26.2",
+    "@types/node": "^20.8.3",
+    "prettier": "^3.0.3",
+    "turbo": "^1.10.15"
   },
   "packageManager": "pnpm@7.15.0"
 }

@@ -8,8 +8,8 @@
     "build": "rm -rf dist && pnpm build:swc && pnpm types",
     "build:swc": "swc src -d dist",
     "types": "tsc --emitDeclarationOnly",
-    "lint": "TIMING=1 eslint \"**/*.{ts,tsx,js,jsx}\" --fix",
-    "clean": "rm -rf ./dist && rm -rf .turbo"
+    "lint": "SET TIMING=1 eslint \"**/*.{ts,tsx,js,jsx}\" --fix",
+    "clean": "rmdir /s /q ./dist && rmdir /s /q .turbo"
   },
   "sideEffects": false,
   "type": "module",
